@@ -38,7 +38,7 @@ $('.owl-carousel').owlCarousel({
 
 Below are the list of osgiserivces created along with their purpose:
 
-ConfigManager - Designates testconfig ocd and fetches API url.
+ConfigManager - Designates testconfig ocd and fetches API url.<br>
 PhoneDirectoryInterface - Inteface contains  List<PhoneDirectoryModel> getPhoneDetails() method.
 PhoneDirectoryService - Osgi service that fetches API data and saves in jcr respository under content/usergenerated/treemobiles. If node already exists, it ignores api call.
 WriteAccessResourceResolverService - provides writes acess resource resolver to PhoneDirectoryService.
