@@ -1,15 +1,15 @@
 # Demo
-This project contains Slider component that retrieves data from API and display in carousal format.
-Component Name : multipurpose-slider
-Features: This component provides ability to author dialog in manual or auto format.
-Dialog containes select dropdown option to choose the source of images to be displayed in slider.
+This project contains Slider component that retrieves data from API and display in carousal format.<br>
+Component Name : multipurpose-slider<br>
+Features: This component provides ability to author dialog in manual or auto format.<br>
+Dialog containes select dropdown option to choose the source of images to be displayed in slider.<br>
 
-Manual option - Enables multifield which allows user to enter image path and image name to be displayed in carousal
-Auto option - Automatically fetches displayName and attachment url and render into page.
+Manual option - Enables multifield which allows user to enter image path and image name to be displayed in carousal<br>
+Auto option - Automatically fetches displayName and attachment url and render into page.<br>
 
-Component uses owl plugin to achieve desired style and js.
+Component uses owl plugin to achieve desired style and js.<br>
 
-The number of images in 1 sider can be controlled by changing js items options
+The number of images in 1 sider can be controlled by changing js items options<br>
 
 $('.owl-carousel').owlCarousel({
     loop:true,
@@ -34,9 +34,9 @@ $('.owl-carousel').owlCarousel({
         }
     }
 });
+<br><br>
 
-
-Below are the list of osgiserivces created along with their purpose:
+Below are the list of osgiserivces created along with their purpose:<br>
 
 ConfigManager - Designates testconfig ocd and fetches API url.<br>
 PhoneDirectoryInterface - Inteface contains  List<PhoneDirectoryModel> getPhoneDetails() method.<br>
@@ -50,5 +50,5 @@ mvn clean install -PautoInstallPackage<br>
 
 After project is installed kindly create and set your write user as stated under in configuration user mapper in http://localhost:4502/system/console/configMgr<br>
 
-<b>com.testsite.core:writeservice=WRITEUSER</b>
+<b>com.testsite.core:writeservice=WRITEUSER</b><br>
 <b>testsite.core:writeservice=WRITEUSER</b>
