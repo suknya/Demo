@@ -39,16 +39,16 @@ $('.owl-carousel').owlCarousel({
 Below are the list of osgiserivces created along with their purpose:
 
 ConfigManager - Designates testconfig ocd and fetches API url.<br>
-PhoneDirectoryInterface - Inteface contains  List<PhoneDirectoryModel> getPhoneDetails() method.
-PhoneDirectoryService - Osgi service that fetches API data and saves in jcr respository under content/usergenerated/treemobiles. If node already exists, it ignores api call.
-WriteAccessResourceResolverService - provides writes acess resource resolver to PhoneDirectoryService.
-SliderModel- It extends WCMUsePojo and invokes service and returns to sightly class.
+PhoneDirectoryInterface - Inteface contains  List<PhoneDirectoryModel> getPhoneDetails() method.<br>
+PhoneDirectoryService - Osgi service that fetches API data and saves in jcr respository under content/usergenerated/treemobiles. If node already exists, it ignores api call.<br>
+WriteAccessResourceResolverService - provides writes acess resource resolver to PhoneDirectoryService.<br>
+SliderModel- It extends WCMUsePojo and invokes service and returns to sightly class.<br>
 
-Inorder to build project run command
+Inorder to build project run command<br>
 
-mvn clean install -PautoInstallPackage
+mvn clean install -PautoInstallPackage<br>
 
-After project is installed kindly create and set your write user as stated under in configuration user mapper in http://localhost:4502/system/console/configMgr
+After project is installed kindly create and set your write user as stated under in configuration user mapper in http://localhost:4502/system/console/configMgr<br>
 
-com.testsite.core:writeservice=WRITEUSER
-testsite.core:writeservice=WRITEUSER
+<b>com.testsite.core:writeservice=WRITEUSER</b>
+<b>testsite.core:writeservice=WRITEUSER</b>
