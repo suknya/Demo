@@ -1,0 +1,41 @@
+<sly data-sly-use.clientLib="/libs/granite/sightly/templates/clientlib.html"
+     data-sly-call="${clientlib.all @ categories='three.slider'}"/>
+<div data-sly-test.isEditMode="${wcmmode.edit}">Configure Slider component</div>
+
+<div class="slideshow-container">
+	<div data-sly-test="${properties.type == 'manual'}">
+		<div data-sly-list.manualMultifield="${resource.getChildren}">
+			<div data-sly-test="${manualMultifield.name == 'products'}">
+				<div class="owl-carousel owl-theme">
+					<sly data-sly-list.prod="${manualMultifield.listChildren}">
+						<div> 
+							<h4> ${prod.product}</h4>
+							<img src="${prod.pathbr}" alt="${prod.product}"/>
+						</div>
+					</sly>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div data-sly-test="${properties.type == 'auto'}">
+		<sly data-sly-use.auto="com.testsite.core.models.SliderModel">
+			<div class="owl-carousel owl-theme">
+				<sly data-sly-list.child="${auto.mobResource.listChildren}">
+					<div> 
+						<h5> ${child.displayname}</h5>
+						<img src="${child.imageurl}" >
+					</div>
+				</sly>
+			</div>
+		</sly>
+	</div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+

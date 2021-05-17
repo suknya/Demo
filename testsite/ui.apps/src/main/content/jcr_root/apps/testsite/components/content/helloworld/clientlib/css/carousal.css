@@ -1,0 +1,32 @@
+
+
+.owl-item > div {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+.owl-item p,
+.owl-item img {
+	max-width: 70%
+}
+
+.owl-nav {
+	position: absolute;
+    top: 35%;
+    width: 100%;
+}
+
+.owl-prev,
+.owl-next {
+    font-size: 60px !important
+}
+.owl-prev {
+  float: left;
+}
+
+.owl-next{
+	float: right;
+}
+.owl-dots {
+	display: none;
+}
