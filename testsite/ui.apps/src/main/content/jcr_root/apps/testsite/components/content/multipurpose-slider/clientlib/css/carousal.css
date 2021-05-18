@@ -29,7 +29,7 @@
 }
 
 .text-slider{
-    word-break: break-all;
+    word-break: break-word;
 	width:145px;
     height: 4.4em;
     line-height: 1.2;
