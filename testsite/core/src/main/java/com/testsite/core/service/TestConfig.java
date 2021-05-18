@@ -18,7 +18,7 @@ public @interface TestConfig {
    */
   @AttributeDefinition(name = "Phone data URL", description = "Test Phone data API URL",
       type = AttributeType.STRING)
-  String getUrl() default "https://www.three.ie/rp-server/commerce/v1/mobileDeviceOffering?salesChannel=selfService&pricePreference=minPriceWithCommitment&sort=-price&groupByVariantGroup=true&filters=category.id==8449299_8368419&levelOfData=offering&qualificationCriteria=orderingActivity==newSubscription";
+  String getUrl() default "https://www.three.ie/rp-server/commerce/v1/mobileDeviceOffering";
 
 
 
