@@ -4,12 +4,12 @@ $(document).ready(function(){
         loop:true,
         margin:15,
         nav: true,
-        items: 4,
+        items: 5,
         responsive:{
             0:{
                 items:1
             },
-             300:{
+             200:{
                 items:2
             },
             600:{

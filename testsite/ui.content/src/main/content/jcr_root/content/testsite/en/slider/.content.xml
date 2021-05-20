@@ -2,12 +2,12 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2021-05-17T11:42:54.439+01:00"
+        cq:lastModified="{Date}2021-05-18T23:45:33.198+01:00"
         cq:lastModifiedBy="admin"
         cq:template="/conf/testsite/settings/wcm/templates/test"
         jcr:primaryType="cq:PageContent"
         jcr:title="Slider"
-        sling:resourceType="weretail/components/structure/page">
+        sling:resourceType="testsite/components/structure/page">
         <root
             jcr:lastModified="{Date}2021-05-14T17:02:00.517+01:00"
             jcr:lastModifiedBy="admin"
@@ -75,6 +75,12 @@
                             pathbr="https://www.three.ie/content/dam/digitalexp/commerce/catalog/devices/51636-l.png"
                             product="Huawei P40 Pro 5G Grey"/>
                     </products>
+                    <cq:responsive jcr:primaryType="nt:unstructured">
+                        <default
+                            jcr:primaryType="nt:unstructured"
+                            offset="0"
+                            width="12"/>
+                    </cq:responsive>
                 </multipurpose_slider>
             </responsivegrid_1362983950>
         </root>

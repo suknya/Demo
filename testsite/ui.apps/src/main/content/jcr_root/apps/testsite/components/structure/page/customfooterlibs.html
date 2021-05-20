@@ -13,6 +13,11 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 */-->
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html">
-    <sly data-sly-call="${clientlib.js @ categories='testsite.base'}"/>
+    <sly data-sly-call="${clientlib.js @ categories='testsite.base,three.slider'}"/>
 </sly>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
