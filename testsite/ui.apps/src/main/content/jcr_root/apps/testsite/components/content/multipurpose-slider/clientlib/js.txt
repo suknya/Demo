@@ -1,2 +1,1 @@
-js/newcdn.js
 js/carousal.js 
